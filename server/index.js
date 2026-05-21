@@ -17,7 +17,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://windstream-taskmanager.netlify.app"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://windstreamm.netlify.app/"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
