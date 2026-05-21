@@ -13,7 +13,7 @@ import TaskDetails from "./pages/TaskDetails";
 import Tasks from "./pages/Tasks";
 import Trash from "./pages/Trash";
 import Users from "./pages/Users";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import Calendar from "./pages/Calendar";
 import { setOpenSidebar } from "./redux/slices/authSlice";
 
