@@ -11,10 +11,10 @@ The application supports secure JWT authentication, Kanban-style task management
 ## 🌐 Live Demo
 
 * **Frontend (Netlify):**
-  https://windstream-taskmanager.netlify.app
+  https://windstreamm.netlify.app/log-in
 
 * **Backend API (Render):**
-  https://windstream-de0s.onrender.com
+  https://windstream-backend.onrender.com
 
 ---
 
@@ -23,15 +23,15 @@ The application supports secure JWT authentication, Kanban-style task management
 ### Admin Access
 
 ```txt
-Email: admin@example.com
+Email: admin@gmail.com
 Password: 123456
 ```
 
 ### User Access
 
 ```txt
-Email: rohit@gmail.com
-Password: Rohit1234
+Email: raghav@gmail.com
+Password: Raghav1234
 ```
 
 ---
