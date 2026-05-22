@@ -11,7 +11,7 @@ The application supports secure JWT authentication, Kanban-style task management
 ## 🌐 Live Demo
 
 * **Frontend (Netlify):**
-  https://windstreamm.netlify.app/log-in
+  https://windstreamm.netlify.app/
 
 * **Backend API (Render):**
   https://windstream-backend.onrender.com
