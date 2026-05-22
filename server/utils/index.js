@@ -18,6 +18,7 @@ export default dbConnection;
 
 export const createJWT = async (res, userId) => {
   const user = await mongoose.model('User').findById(userId).select('isAdmin');
+
   const token = jwt.sign(
     { userId, isAdmin: user.isAdmin },
     process.env.JWT_SECRET,
@@ -25,9 +26,9 @@ export const createJWT = async (res, userId) => {
   );
 
   res.cookie("token", token, {
-    httpOnly: true, 
-    secure: process.env.NODE_ENV !== "development", 
-    sameSite: "strict", //prevents CSRF attacks
-    maxAge: 1 * 24 * 60 * 60 * 1000,   // 1 day 
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+    maxAge: 1 * 24 * 60 * 60 * 1000,
   });
-}
+};
