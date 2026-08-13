@@ -10,6 +10,7 @@ export const dbConnection = async () => {
   }
    catch (error) {
     console.log("DB Error: " + error);
+    throw error;
   }
 };
 

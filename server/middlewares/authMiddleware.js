@@ -8,7 +8,7 @@ const protectRoute = async (req, res, next) => {  try {
       const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
       
       // Get user data to ensure they still exist and are active
-      const user = await User.findById(decodedToken.userId).select("email isActive");
+      const user = await User.findById(decodedToken.userId).select("email isActive isAdmin");
       
       if (!user || !user.isActive) {
         return res.status(401).json({ 
@@ -19,7 +19,7 @@ const protectRoute = async (req, res, next) => {  try {
 
       req.user = {
         email: user.email,
-        isAdmin: decodedToken.isAdmin,
+        isAdmin: user.isAdmin,
         userId: decodedToken.userId,
       };
 
