@@ -47,11 +47,11 @@ const Table = ({ tasks = [] }) => {
 
         setTimeout(() => {
           setOpenDialog(false);
-          window.location.reload();
+          // window.location.reload();
           }, 500); 
     } catch (error) {
-    console.log(err);
-    toast.error(err?.data?.message || err.error);
+    console.error(error);
+    toast.error(error?.data?.message || error?.error || "Something went wrong");
     }
     };
 

@@ -1,3 +1,4 @@
+import dns from "dns";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -8,6 +9,7 @@ import routes from "./routes/index.js";
 import { dbConnection } from "./utils/index.js";
 
 dotenv.config();
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 dbConnection();
 
